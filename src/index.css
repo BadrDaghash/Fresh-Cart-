@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row {
+  @apply flex flex-wrap py-8 items-center px-4
+}
+/* @keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    animation: hoverslide-up 1s ease-out forwards; Adding the custom animation
+
+  }
+} */
+.item {
+  @apply relative;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg text-white bg-[#7234fa] 
+         translate-y-full opacity-0 
+         transition-all duration-300 w-full;
+}
+
+.item:hover .btn {
+  @apply translate-y-0 opacity-100 bg-[#5b28c8] duration-300;
+}
